@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main () {
+	
+	char opc;
+	float L, total;
+	
+	printf("Escolha com oque vc quer abastecer \n \n");
+	
+	printf("A - Alcool = 6,05 R$ \n");
+	printf("G - Gasolina 7,10 R$ \n");
+	printf("D - Diesel 6,10 R$ \n \n");
+	
+	printf("Qual sera sua opcao:  ");
+	scanf("%c", &opc);
+	
+	printf("Quantos litros voce deseja colocar: ");
+	scanf("%f", &L);
+	
+	switch(opc) {
+		
+		case 'A':
+			total = L * 6.05;
+			printf("\n Total abastecido: %f", total);
+			break;
+		
+		case 'G':
+			total = L * 7.10;
+			printf("\n Total abastecido: %f", total);
+			break;
+			
+		case 'D':
+			total = L * 6.10;
+			printf("\n Total abastecido: %f", total);
+			break;
+			
+		default:
+			printf("Invalido");
+			break;
+			
+	}
+	
+	return 0;
+}
